@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header{
+    background-color: #373333;
+    color: white;
+    padding: auto;
+}
+section{
+    margin: 20px;
+}
+#product-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    height:auto;
+}
+
+form input, form button{
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+}
