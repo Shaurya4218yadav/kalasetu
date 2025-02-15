@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Marketplace</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+        .form-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalasetu</h1>
+        
+        <h2>Add Your Product</h2>
+        <div>
+            <div class="form-group">
+                <input type="text" id="productName" placeholder="Product Name">
+            </div>
+            <div class="form-group">
+                <input type="number" id="productPrice" placeholder="Price">
+            </div>
+            <div class="form-group">
+                <input type="text" id="productImage" placeholder="Image URL">
+            </div>
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+
+        <h2>Products for Sale</h2>
+        <div id="productList"></div>
+    </div>
+
+    <script>
+        function addProduct() {
+            let name = document.getElementById("productName").value;
+            let price = document.getElementById("productPrice").value;
+            let image = document.getElementById("productImage").value;
+
+            if (name && price && image) {
+                let productDiv = document.createElement("div");
+                productDiv.classList.add("product");
+                productDiv.innerHTML = `<h3>${name}</h3><p>Price: $${price}</p><img src="${image}" width="100">`;
+                document.getElementById("productList").appendChild(productDiv);
+            } else {
+                alert("Please fill in all fields");
+            }
+        }
+    </script>
+</body>
+</html>
