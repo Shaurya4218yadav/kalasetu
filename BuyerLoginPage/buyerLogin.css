@@ -4,7 +4,8 @@
     font-family: "Metamorphous", serif;
     font-style: normal;
 }
-body{
+
+body {
     background-color: rgb(255, 246, 235);
 }
 
@@ -45,85 +46,87 @@ body{
 }
 
 #menulist li,
-#menulist button {
+button {
     margin-right: 3vw;
     font-size: 1.5em;
     font-family: "Metamorphous", serif;
     font-style: normal;
 }
 
-#menulist button{
+#menulist button {
     background-color: rgb(190, 37, 255);
     background-color: rgb(247, 74, 74);
-    border-style:solid;
-    color:rgb(255, 255, 255) ;
+    border-style: solid;
+    color: rgb(255, 255, 255);
     padding: 7px;
     border-radius: 10px;
     border-color: rgb(225, 215, 0);
     border-width: 2px;
-    box-shadow: -5px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -10px -1px 10px 5px rgba(0, 0, 0, 0.503);
 }
 
-#home_image img {
-    width: 100%;
-    filter: brightness(0.5);
-    border: 0%;
-    margin: 0%;
+#buyerLoginBox {
+    background-color: rgb(255, 152, 55);
+    width: 30vw;
+    height: 40vh;
 }
 
-footer {
-    background-color: black;
-    width: auto;
-    height: 150px;
-    margin: 0;
-}
-
-#optionBox {
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+#buyerLoginBoxContainer {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 0;
-    width: 800px;
-    height: 600px;
-    border-radius: 10px;
-
-    /* display: none; */
-}
-#optionBoxCloseBtnBox{
-    background-color: blue;
-    width:min-content;
-}
-#optionBoxClosebtn {
-    background-color: rgb(231, 41, 41);
-    width:50px;
-    height: 50px;
-    font-size: 40px;
-    color: lavender;
 }
 
-
-#abouthead {
-    background-color: rgb(146, 1, 249);
-    font-style: none;
-    font-size: 2.5em;
-    text-align: center;
-    padding: 50px;
-    color: rgb(255, 246, 235);
-
+#buyerLoginBoxHeadBox {
+    display: flex;
+    justify-content:start;
+    align-items: baseline;
+    padding: 30px;
 }
-
-#about p {
+#loginP{
+    font-size: 2.25em;
+}
+#type{
     font-size: 1.25em;
-    text-align: center;
-    background-color: rgb(230, 222, 195);
-    padding: 60px;
+}
+#buyerLoginDetailsBox {
+    background-color: rgb(254, 170, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
+input {
+    height: 40px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+#buyerEmailInputLabel{
+    /* background-color: azure; */
+    width:85% ;
+    font-size: 0.9em;
+}
+#gap{
+    height:30px;
+}
+#buyerPasswordInputLabel{
+    /* background-color: azure; */
+    width:85%;
+    font-size: 0.9em;
+}
+#loginIdButtonBox{
+    width:85%;
+    margin: 20px;
+}
+#loginIdButton{
+    width: 100%;
+    height: 45px;
+    border-radius:22.5px;
+}
