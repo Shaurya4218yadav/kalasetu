@@ -43,7 +43,29 @@ body{
     align-items: center;
 
 }
+#menulist li{
+    /* padding-bottom: 10px 5px; */
+    height: auto;
+    margin: auto;
 
+}
+#menulist li a:after{
+    background: none repeat scroll 0 0 transparent;
+    /* bottom: 0; */
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    /* position: absolute; */
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#menulist li a:hover:after{
+    width:100%;
+    /* transition: 0s ease 0.5s, left 0s ease 0.5s; */
+
+}
 #menulist li,
 #menulist button {
     margin-right: 3vw;
@@ -62,13 +84,15 @@ body{
     border-color: rgb(225, 215, 0);
     border-width: 2px;
     box-shadow: -5px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
-
 #home_image img {
     width: 100%;
     filter: brightness(0.5);
     border: 0%;
     margin: 0%;
+    padding: 0%;
+    display: block;
 }
 
 footer {
@@ -86,44 +110,79 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     padding: 0;
     width: 800px;
     height: 600px;
     border-radius: 10px;
 
-    /* display: none; */
+    display: none;
+
 }
 #optionBoxCloseBtnBox{
-    background-color: blue;
-    width:min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 20px;
+    right: 20px;
 }
 #optionBoxClosebtn {
-    background-color: rgb(231, 41, 41);
-    width:50px;
+    background-color: rgb(250, 58, 58);
+    width: 50px;
     height: 50px;
-    font-size: 40px;
+    font-size:40px;
     color: lavender;
+    border-style: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
+#sellerOptionButton{
+    position: fixed;
+    left: 42%;
+    top: 35%;
+    padding: 15px;
+    font-size: 25px;
+    background-color: rgba(103, 103, 103, 0.485);
+    color:rgb(255, 246, 235) ;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#buyerOptionButton{
+    position: fixed;
+    left: 38.75%;
+    top: 50%;
+    padding: 15px;
+    font-size: 25px;
+    background-color: rgba(103, 103, 103, 0.485);
+    color:rgb(255, 246, 235) ;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 #abouthead {
-    background-color: rgb(146, 1, 249);
+    background-color: rgb(133, 0, 181);
     font-style: none;
     font-size: 2.5em;
     text-align: center;
     padding: 50px;
     color: rgb(255, 246, 235);
-
 }
-
 #about p {
     font-size: 1.25em;
     text-align: center;
     background-color: rgb(230, 222, 195);
+    background-color: rgb(241, 201, 255);
     padding: 60px;
 }
 
